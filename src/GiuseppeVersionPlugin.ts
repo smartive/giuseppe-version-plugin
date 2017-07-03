@@ -1,6 +1,5 @@
 import {
     ControllerDefinitionConstructor,
-    Giuseppe,
     GiuseppePlugin,
     ParameterDefinitionConstructor,
     ReturnType,
@@ -8,8 +7,9 @@ import {
     RouteModificatorConstructor,
 } from 'giuseppe';
 
+import { GiuseppeRouteVersion } from './GiuseppeRouteVersion';
+
 /**
- * Giuseppe plugin.
  * Giuseppe plugin that adds a ´@Version´ route modificator to add versioning to an api.
  * 
  * @export
@@ -20,13 +20,14 @@ export class GiuseppeVersionPlugin implements GiuseppePlugin {
     public returnTypeHandler: ReturnType<any>[] | null = null;
     public controllerDefinitions: ControllerDefinitionConstructor[] | null = null;
     public routeDefinitions: RouteDefinitionConstructor[] | null = null;
-    public routeModificators: RouteModificatorConstructor[] | null = null;
+    public routeModificators: RouteModificatorConstructor[] = [];
     public parameterDefinitions: ParameterDefinitionConstructor[] | null = null;
 
     public get name(): string {
         return this.constructor.name;
     }
 
-    public initialize(giuseppe: Giuseppe): void {
+    public initialize(): void {
+        this.routeModificators.push(GiuseppeRouteVersion);
     }
 }

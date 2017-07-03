@@ -1,7 +1,7 @@
 {
   "name": "giuseppe-version-plugin",
   "version": "0.0.1",
-  "description": "Giuseppe plugin that adds a ´@Version´ route modificator to add versioning to an api.",
+  "description": "Giuseppe plugin that adds a `@Version` route modificator to add versioning to an api.",
   "main": "index.js",
   "typings": "index.d.ts",
   "scripts": {
@@ -13,24 +13,37 @@
     "test:watch": "npm run clean && jest -c ./jest.json --watch",
     "typedoc": "del-cli ./docs && typedoc --ignoreCompilerErrors --out ./docs --mode file --tsconfig ./config/tsconfig.build.json ./src/"
   },
-  "keywords": [],
+  "keywords": [
+    "giuseppe",
+    "plugin",
+    "express",
+    "versioning",
+    "@Version",
+    "api"
+  ],
   "repository": {
     "type": "git",
-    "url": "GIT URL"
+    "url": "git+ssh://git@github.com:smartive/giuseppe-version-plugin.git"
   },
   "engines": {
     "node": ">=7",
     "npm": "*"
   },
   "author": "Christoph Bühler <christoph@smartive.ch>",
-  "license": "ISC",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/smartive/giuseppe-version-plugin/issues"
+  },
+  "homepage": "https://github.com/smartive/giuseppe-version-plugin#readme",
   "dependencies": {
     "giuseppe": "^2.0.0"
   },
   "devDependencies": {
     "@types/jest": "^20.0.2",
+    "@types/request": "0.0.45",
     "del-cli": "^1.1.0",
     "jest": "^20.0.4",
+    "request": "^2.81.0",
     "ts-jest": "^20.0.6",
     "tslint": "^5.4.3",
     "tslint-config-airbnb": "^5.2.1",
