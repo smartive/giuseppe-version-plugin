@@ -14,6 +14,9 @@ node_js:
 before_script:
   - npm prune
 
+after_script:
+  - npm install coveralls@^2.11.9 && cat ./coverage/lcov.info | coveralls
+
 after_success:
   - npm run semantic-release
 
