@@ -1,6 +1,6 @@
 {
   "name": "giuseppe-version-plugin",
-  "version": "0.0.1",
+  "version": "0.0.0-development",
   "description": "Giuseppe plugin that adds a `@Version` route modificator to add versioning to an api.",
   "main": "index.js",
   "typings": "index.d.ts",
@@ -11,7 +11,8 @@
     "lint": "tslint -c ./tslint.json -p ./config/tsconfig.build.json",
     "test": "npm run lint && npm run clean && jest -c ./jest.json",
     "test:watch": "npm run clean && jest -c ./jest.json --watch",
-    "typedoc": "del-cli ./docs && typedoc --ignoreCompilerErrors --out ./docs --mode file --tsconfig ./config/tsconfig.build.json ./src/"
+    "typedoc": "del-cli ./docs && typedoc --ignoreCompilerErrors --out ./docs --mode file --tsconfig ./config/tsconfig.build.json ./src/",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "keywords": [
     "giuseppe",
@@ -23,7 +24,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com:smartive/giuseppe-version-plugin.git"
+    "url": "https://github.com/smartive/giuseppe-version-plugin.git"
   },
   "engines": {
     "node": ">=7",
@@ -49,6 +50,7 @@
     "tslint-config-airbnb": "^5.2.1",
     "tsutils": "^2.5.1",
     "typedoc": "^0.7.1",
-    "typescript": "^2.4.1"
+    "typescript": "^2.4.1",
+    "semantic-release": "^6.3.6"
   }
 }
