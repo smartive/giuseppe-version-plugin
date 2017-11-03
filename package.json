@@ -41,7 +41,7 @@
   },
   "devDependencies": {
     "@types/jest": "^21.1.0",
-    "@types/request": "2.0.3",
+    "@types/request": "2.0.4",
     "del-cli": "^1.1.0",
     "jest": "^21.0.2",
     "request": "^2.81.0",
