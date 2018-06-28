@@ -37,7 +37,7 @@
   },
   "homepage": "https://github.com/smartive/giuseppe-version-plugin#readme",
   "dependencies": {
-    "giuseppe": "^2.0.5"
+    "giuseppe": "^3.1.0"
   },
   "devDependencies": {
     "@smartive/tslint-config": "^2.0.0",
