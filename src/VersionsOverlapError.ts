@@ -1,6 +1,6 @@
 /**
  * Error that is thrown when a version information on a route does overlap another route.
- * 
+ *
  * @class VersionsOverlapError
  * @extends {Error}
  */
