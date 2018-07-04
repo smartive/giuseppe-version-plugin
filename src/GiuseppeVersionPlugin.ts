@@ -11,7 +11,7 @@ import { GiuseppeRouteVersion } from './GiuseppeRouteVersion';
 
 /**
  * Giuseppe plugin that adds a ´@Version´ route modificator to add versioning to an api.
- * 
+ *
  * @export
  * @class GiuseppeVersionPlugin
  * @implements {GiuseppePlugin}
