@@ -41,10 +41,10 @@
   },
   "devDependencies": {
     "@smartive/tslint-config": "^4.0.0",
-    "@types/jest": "^22.0.1",
+    "@types/jest": "^23.0.0",
     "@types/request": "2.47.1",
     "del-cli": "^1.1.0",
-    "jest": "^22.1.1",
+    "jest": "^23.0.0",
     "request": "^2.83.0",
     "semantic-release": "^12.2.2",
     "ts-jest": "^23.0.0",
