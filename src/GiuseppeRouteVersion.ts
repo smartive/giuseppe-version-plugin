@@ -33,10 +33,10 @@ type VersionedRoutes = {
  *
  * If the route version cannot be parsed by the system, v1 is the default.
  * If no matching route with a given version is found, 404 is returned.
- * 
+ *
  * @export
- * @param {{ from?: number, until?: number, headerName?: string }} [versionInformation={}] 
- * @returns {FunctionMethodDecorator} 
+ * @param {{ from?: number, until?: number, headerName?: string }} [versionInformation={}]
+ * @returns {FunctionMethodDecorator}
  */
 export function Version(
     versionInformation: { from?: number, until?: number, headerName?: string } = {},
@@ -56,7 +56,7 @@ export function Version(
 
 /**
  * Route modificator class for giuseppe. Contains the definitions and ultimatively modifies the routes.
- * 
+ *
  * @export
  * @class GiuseppeRouteVersion
  * @implements {RouteModificator}
@@ -72,13 +72,13 @@ export class GiuseppeRouteVersion implements RouteModificator {
     /**
      * Create function for a giuseppe route version. Does check for impossible combinations when creating
      * a versioned route.
-     * 
+     *
      * @static
-     * @param {Object} target 
-     * @param {number} [from] 
-     * @param {number} [until] 
-     * @param {string} [headerName='Accept-Version'] 
-     * @returns {GiuseppeRouteVersion} 
+     * @param {Object} target
+     * @param {number} [from]
+     * @param {number} [until]
+     * @param {string} [headerName='Accept-Version']
+     * @returns {GiuseppeRouteVersion}
      * @memberof GiuseppeRouteVersion
      * @throws {VersionInformationMissingError} Either from or until must be configured.
      * @throws {VersionInformationInvalidError} From or until must be valid (number, no floating point, bigger than 1).
@@ -123,9 +123,9 @@ export class GiuseppeRouteVersion implements RouteModificator {
      * Creates the different versions for a route. Creates a list of versions for a controller and remembers them
      * by url. Creates a router that does match the parsed versions and returns them to be registered.
      * The router returns a 404 when no matching route is found.
-     * 
-     * @param {GiuseppeRoute[]} routes 
-     * @returns {GiuseppeRoute[]} 
+     *
+     * @param {GiuseppeRoute[]} routes
+     * @returns {GiuseppeRoute[]}
      * @memberof GiuseppeRouteVersion
      * @throws {VersionsOverlapError} The versions are not allowed to overlap.
      */
