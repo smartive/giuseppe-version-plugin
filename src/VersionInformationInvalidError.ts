@@ -1,6 +1,6 @@
 /**
  * Error that is thrown when a version information contains errors.
- * (Error will happen at startup) 
+ * (Error will happen at startup)
  *
  * @class VersionInformationInvalidError
  * @extends {Error}

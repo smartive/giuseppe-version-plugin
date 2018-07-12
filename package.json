@@ -40,17 +40,17 @@
     "giuseppe": "^2.0.5"
   },
   "devDependencies": {
-    "@smartive/tslint-config": "^2.0.0",
-    "@types/jest": "^22.0.1",
-    "@types/request": "2.47.0",
+    "@smartive/tslint-config": "^4.0.0",
+    "@types/jest": "^23.0.0",
+    "@types/request": "2.47.1",
     "del-cli": "^1.1.0",
-    "jest": "^22.1.1",
+    "jest": "^23.0.0",
     "request": "^2.83.0",
     "semantic-release": "^15.0.0",
-    "ts-jest": "^22.0.1",
+    "ts-jest": "^23.0.0",
     "tslint": "^5.9.1",
     "tsutils": "^2.18.0",
-    "typedoc": "^0.10.0",
+    "typedoc": "^0.11.0",
     "typescript": "^2.6.2"
   }
 }

@@ -11,7 +11,7 @@ export type VersionRouter = GiuseppeRoute & { __type: 'router' };
 
 /**
  * Versioned giuseppe route. Contains information about "from" and "until" versions.
- * 
+ *
  * @export
  * @class VersionedRoute
  * @implements {GiuseppeRoute}
@@ -30,9 +30,9 @@ export class VersionedRoute implements GiuseppeRoute {
      * Creates an instance of VersionedRoute.
      * Does basically clone the given route and adds from / until information.
      *
-     * @param {GiuseppeRoute} route 
-     * @param {number} from 
-     * @param {number} until 
+     * @param {GiuseppeRoute} route
+     * @param {number} from
+     * @param {number} until
      * @memberof VersionedRoute
      */
     constructor(route: GiuseppeRoute, public from: number, public until: number) {
@@ -48,9 +48,9 @@ export class VersionedRoute implements GiuseppeRoute {
 
     /**
      * Checks if the route is in the given version bounds.
-     * 
-     * @param {number} requestedVersion 
-     * @returns {boolean} 
+     *
+     * @param {number} requestedVersion
+     * @returns {boolean}
      * @memberof VersionedRoute
      */
     public isInVersionBounds(requestedVersion: number): boolean {
