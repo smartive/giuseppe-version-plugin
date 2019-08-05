@@ -49,7 +49,7 @@
     "semantic-release": "^12.2.2",
     "ts-jest": "^23.0.0",
     "tslint": "^5.9.1",
-    "tsutils": "^2.18.0",
+    "tsutils": "^3.16.0",
     "typedoc": "^0.11.0",
     "typescript": "^2.6.2"
   }
